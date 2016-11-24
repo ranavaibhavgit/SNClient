@@ -1,7 +1,7 @@
 var app = angular.module('myApp');
 
-app.controller('myAppCtrl', function($scope) {
+app.controller('myAppCtrl', function($scope, mySrv) {
   $scope.name = "Jackie"
 
-  $scope.friends = ["James", "Anthony", "Albert"]
+  $scope.friends = mySrv.friends;
 })
