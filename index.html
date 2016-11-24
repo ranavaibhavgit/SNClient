@@ -4,18 +4,24 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
 
-  <link href="css/styles.css" rel="styleseet">
+  <link href="css/styles.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
   <title>SNClient</title>
 </head>
 
 <body ng-controller="myAppCtrl">
-  {{name}}  
+  <div>
+    My Name is: {{name}}
+  </div>  
+  <div>
+    My friends list: <br />
+    <span ng-repeat="friend in friends">{{friend}} <br /> </span>
+  </div>
   
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
 <script src="js/app.js"></script>
-<scriot src="js/mainCtrl.js"></script>
+<script src="js/mainCtrl.js"></script>
 
 </body>
 </html>
